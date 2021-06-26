@@ -1,0 +1,42 @@
+<navbar class="custom-nav">
+  <a href="/">
+    <img src="/assets/logo.png" style="opacity: 0.7; width: 20%"
+  /></a>
+  <div class="navbar" id="navmenu">
+    <nav>
+      <ul class="nav_links">
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div>
+    <!-- <a href="#">Sign In</a> | <a href="sign up.html">Register</a> -->
+    <% if(user){ %> <% if(user.userType==='Farmer'){ %>
+    <a href="/farmers/dashboard">Farmer Dashboard |</a>
+    <% }else{ %>
+    <a href="/contractors/dashboard">Contractor Dashboard |</a>
+    <% } %>
+    <form action="/logout" method="POST" style="display: inline">
+      <button
+        type="submit"
+        style="background: none; border: none; color: #6c8294"
+      >
+        <b>Logout</b>
+      </button>
+    </form>
+    <% }else{ %>
+    <a href="/contractors/login"><button class="btncont">Contractor</button></a>
+    <a href="/farmers/login"><button class="btnfarmer">Farmer</button></a>
+    <% } %>
+  </div>
+  <div class="menu-button" id="menu-button"></div>
+  <%- include('translate.ejs') %>
+  <script>
+    window.addEventListener("scroll", function() {
+    var nav = document.querySelector("navbar");
+    nav.classList.toggle("sticky", window.scrollY > 0)
+  })
+  </script>
+  
+</navbar>
