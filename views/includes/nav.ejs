@@ -10,19 +10,20 @@
       </ul>
     </nav>
   </div>
-  <div>
+  <div class= "dashboardlogin">
+        
     <!-- <a href="#">Sign In</a> | <a href="sign up.html">Register</a> -->
     <% if(user){ %> <% if(user.userType==='Farmer'){ %>
-    <a href="/farmers/dashboard">Farmer Dashboard |</a>
+    <a href="/farmers/dashboard"><button class="btncont">Dashboard</button></a>
     <% }else{ %>
-    <a href="/contractors/dashboard">Contractor Dashboard |</a>
+    <a href="/contractors/dashboard"><button class="btnfarmer">Dashboard</button></a>
     <% } %>
     <form action="/logout" method="POST" style="display: inline">
       <button
         type="submit"
         style="background: none; border: none; color: #6c8294"
       >
-        <b>Logout</b>
+        <b><button class="btnfarmer">Logout</button></b>
       </button>
     </form>
     <% }else{ %>

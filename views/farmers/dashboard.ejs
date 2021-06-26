@@ -22,16 +22,17 @@
 </head>
 
 <body>
+  <%- include('../includes/nav') %>
   <div id="wrapper">
     <div class="overlay"></div>
 
     <!-- Sidebar -->
-    <%- include('../includes/dashboard-nav') %>
-    <%- include('../includes/translate.ejs') %>
+    <div class="sidenav"><%- include('../includes/dashboard-nav') %></div>
 
       <!-- /#sidebar-wrapper -->
 
       <!-- Page Content -->
+      
       <div id="page-content-wrapper">
         <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
           <span class="hamb-top"></span>
@@ -46,16 +47,22 @@
               <!-- <a href="/farmers/land/new">New Land</a> -->
               <div class="row">
                 <div class="col-3">
-                  <figure class="logo-img">
-                    <a href="/"> <img src="/assets/logo.png" style="opacity: 0.7; width: 70%;"></a>
-                  </figure>
+                  
                 </div>
                 <div class="col-9" style="display: grid; align-items: center;">
+                  
                   <nav>
                     <ul>
-                      <li><a href="/about">About</a></li>
-                      <li><a href="/contact">Contact</a></li>
                       <div class="navbarTxt" style="display: flex; flex-direction: row; margin-left: 20%;">
+                        
+                      <!-- <li><a href="/about">About</a></li>
+                      <li><a href="/contact">Contact</a></li> -->
+                      
+                        <!-- <ul class="nav_links">
+                          <li><a href="/about">About</a></li>
+                          <li><a href="/contact">Contact</a></li>
+                          
+                        </ul> -->
                         <li><button class="schedule-button addBtn" data-toggle="modal" data-target="#addStock">Add
                             Stock</button></li>
 
@@ -128,6 +135,7 @@
                             </div>
                           </div>
                         </div>
+                       
                       </div>
                     </ul>
                   </nav>

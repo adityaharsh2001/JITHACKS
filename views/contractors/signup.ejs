@@ -1,5 +1,4 @@
-<%- include('../includes/head.ejs') %>
-
+<header><%- include('../includes/nav.ejs') %></header>
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet" />
@@ -30,11 +29,10 @@
             <button>Signup</button>
         </form> -->
 
-        <%- include('../includes/translate.ejs') %>
+        <!-- <%- include('../includes/translate.ejs') %>
 
-        <a class="schedule-button" href="/">home</a>
+        <a class="schedule-button" href="/">home</a> -->
         <div class="form_holder">
-            <h2 class="fs-title" style="color: #fff">steps jquery form with Icons</h2>
             <form id="msform" action="/contractors/" method="POST" enctype="multipart/form-data">
                 <ul id="progressbar" class="clientSignup" style="margin-left: 30%;">
                     <li class="active">1. Personal Details</li>
