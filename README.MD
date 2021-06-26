@@ -80,3 +80,5 @@ _The following technologies will be used to make this application -_
 
 [Akshit Bansal](https://github.com/abansal755)
 
+[Aditya Harsh](https://github.com/adityaharsh2001)
+
