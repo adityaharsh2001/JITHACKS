@@ -15,7 +15,7 @@ const methodOverride = require('method-override');
 
 (async function(){
     try{
-        await mongoose.connect('mongodb+srv://nitish_kumar:1234567890@cluster0.xt7ds.mongodb.net/progrow?retryWrites=true&w=majority',{
+        await mongoose.connect('mongodb+srv://"Yaha URI Dalo',{
             useNewUrlParser: true,
             useFindAndModify: true,
             useUnifiedTopology: true
